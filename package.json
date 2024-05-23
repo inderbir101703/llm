@@ -1,0 +1,28 @@
+{
+  "name": "llm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r ts-node/register src/index.ts",
+    "startTool": "node -r ts-node/register src/toolCall.ts",
+    "startFlight":"node -r ts-node/register src/flightAssistant.ts",
+    "imageExp":"node -r ts-node/register src/dalle/ch1.ts",
+    "startAudio":"node -r ts-node/register src/audio.ts",
+    "startEmbedding":"node -r ts-node/register src/embedding/index.ts",
+    "startSimEmbed":"node -r ts-node/register src/embedding/similar.ts",
+    "startMoviesEmbed":"node -r ts-node/register src/embedding/moviesRecommender.ts"
+
+  },
+  "author": "indebir",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "openai": "^4.47.1",
+    "tiktoken": "^1.0.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
